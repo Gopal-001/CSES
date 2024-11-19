@@ -1,0 +1,30 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Run",
+            "command": "/opt/homebrew/bin/g++-14",
+            "args": [
+                "-std=c++14",
+                "${file}",
+                "-o",
+                "${fileDirname}/${fileBasenameNoExtension}",
+                "&&",
+                "${fileDirname}/${fileBasenameNoExtension}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true,
+                "echo": true,
+                "showReuseMessage": false,
+                "clear": true
+            }
+        }
+    ]
+}

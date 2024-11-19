@@ -5,13 +5,13 @@ const int INF = INT_MAX;
 
 void solve() {
     int n,m;cin>>n>>m;
-    vector<vector<int>> v(n+2);
+    vector<vector<int>> vc(n+2);
     vector<int> vis(n+2,0),dis(n+2,INF);
 
     for(int i=0;i<m;i++){
         int u,v;cin>>u>>v;
-        v[u].push_back(v);
-        v[v].push_back(u);
+        vc[u].push_back(v);
+        vc[v].push_back(u);
     }
     queue<int> q;
     q.push(1);
