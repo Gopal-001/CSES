@@ -9,9 +9,9 @@
                 "-std=c++14",
                 "${file}",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
+                "${fileDirname}/${fileBasenameNoExtension}.out",
                 "&&",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "${fileDirname}/${fileBasenameNoExtension}.out"
             ],
             "group": {
                 "kind": "build",

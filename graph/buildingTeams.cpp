@@ -47,7 +47,6 @@ void solve() {
             while(!q.empty()){
                 auto tp = q.front();q.pop();
                 for(auto u:vc[tp]){
-                    debug(u);
                     if(!vis[u]){
                         vis[u]=true;
                         col[u] = 3-col[tp];
